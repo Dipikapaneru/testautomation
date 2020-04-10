@@ -1,0 +1,58 @@
+package automationFramework;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TestNavigation {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.chrome.driver", "src/drivers/chromedriver");
+		WebDriver driver=new ChromeDriver();
+	
+		//String appUrl = "https://premierenroll.com";
+		//driver.get(appUrl);
+		
+		
+		
+		// Open ToolsQA web site
+		 String appUrl = "http://www.DemoQA.com";
+		 driver.get(appUrl);
+		 Thread.sleep(5000);
+		 // Click on Registration link
+		 driver.findElement(By.xpath(".//*[@id='menu-item-374']/a")).click();
+		 
+		 // Go back to Home Page
+		 driver.navigate().back();
+		 
+		 // Go forward to Registration page
+		 driver.navigate().forward();
+		 
+		 // Go back to Home page
+		 driver.navigate().to(appUrl);
+		 
+		 // Refresh browser
+		 driver.navigate().refresh();
+		 
+		 // Close browser
+		 driver.close();
+		
+		
+		
+		//driver.navigate().to("https://premierenroll.com");
+		//driver.manage().window().maximize();	
+		//Thread.sleep(5000);
+		//driver.navigate().forward();
+		//Thread.sleep(5000);
+		//driver.navigate().back();
+		//Thread.sleep(5000);
+		//driver.navigate().refresh();
+		//Thread.sleep(5000);
+		//driver.close();
+	}
+		
+	
+	
+}

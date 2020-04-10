@@ -1,0 +1,53 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class Landing {
+
+	WebDriver driver;
+	
+	
+	public Landing(WebDriver passedDriver ) {
+		driver =passedDriver;
+	}
+	
+	By accessCodeField = By.id("search_acode");
+	By summitcode = By.id("submit_agentcode");
+	By submitcode = By.id("submit_Agent");
+	By repRegisteration = By.linkText("Rep Registration");
+	By next =By.id("firstNext");
+	By firstname=By.name("agent_fname");
+	
+	
+	public void summit() {
+		driver.findElement(summitcode).click();
+	}
+	
+	public void accesscode(String Code) {
+		driver.findElement(accessCodeField).sendKeys(Code);
+
+	}
+	 public void accses() {
+		 driver.findElement(submitcode).click();
+	 }
+	 
+	public void registeration() {
+	
+		driver.findElement(repRegisteration).click();
+	}
+	
+	public void nextbutton() {
+		driver.findElement(next).click();
+		
+	}
+	public void myname(String fname) {
+		driver.findElement(firstname).sendKeys(fname);
+		//driver.findElement(By.xpath(".//*[@id='agent_fname']")).sendKeys(fname);
+	}
+} 
+
+		
+		
+	
+

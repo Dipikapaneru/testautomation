@@ -1,0 +1,28 @@
+package automationFramework;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TestNavigation {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.chrome.driver", "src/drivers/chromedriver");
+		WebDriver driver=new ChromeDriver();
+	
+		driver.navigate().to("https://premierenroll.com");
+		driver.manage().window().maximize();	
+		Thread.sleep(2000);
+		driver.navigate().back();
+		Thread.sleep(2000);
+		driver.navigate().forward();
+		Thread.sleep(2000);
+		driver.navigate().refresh();
+		Thread.sleep(5000);
+		driver.close();
+	}
+		
+	
+	
+}

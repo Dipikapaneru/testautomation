@@ -1,0 +1,28 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class Signature {
+	
+	WebDriver driver;
+	
+	public Signature(WebDriver args) {
+		driver = args;
+	}
+	
+	By verificationCode = By.tagName("mark");
+	
+	
+	
+	public void retriveVerificationCode() {
+		String code = driver.findElement(verificationCode).getText();
+		
+		System.out.println(code);
+		
+		
+	}
+	
+	
+
+}

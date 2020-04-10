@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Projects.Moverloadibg.java&apos; to &apos;Moverloading.java&apos;&#x0A;- Original project: &apos;Myjavaproject&apos;&#x0A;- Original element: &apos;Projects.Moverloadibg.java&apos;&#x0A;- Renamed element: &apos;Projects.Moverloading.java&apos;" description="Rename compilation unit &apos;Moverloadibg.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;Projects{Moverloadibg.java" name="Moverloading.java" references="false" stamp="1584831696787" version="1.0"/>
+</session>
